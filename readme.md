@@ -1,48 +1,65 @@
-# Using Pico-DataLog-Boot with MicroPython
-The Pico-Datalog-boot is a Pico Expansion board fitting a RTC (Reak Time Clock) and a SDCard. 
+[This file also exists in ENGLISH](readme_ENG.md)
 
-![Pico-Datalog-boot](docs/pico-datalog-boot.jpg)
+# Utiliser le Pico-DataLog-Boot avec MicroPython
+Le Pico-Datalog-boot est une carte d'extension pour Pico équipé d'une horloge temps réelle (RTC: Reak Time Clock) et d'un connecteur microSD. 
 
-This expansion contains everything you need to deal with datetime and with large file storage (read/write files on a sd card is really great)
+![Pico-Datalog-boot](docs/_static/pico-datalog-boot.jpg)
 
-# Install from MASTER
+Cette extension contient tout ce qu'il faut pour gérer le temps et le stockage de grands fichiers (lecture/écriture de fichiers sur une carte SD est vraiment un excellent complément sur un projet)
 
-The [masters.out/](masters.out) folder contains ZIP archive with all required files (examples scripts and libraries). Extract the files and copy them on your MicroPython plateform.
+# Installer depuis le MASTER
 
-# Install the Libraries
+Le répertoire [masters.out/](masters.out) propose une archive ZIP contenant tous les fichiers nécessaires (scripts d'examples et bibliothèques). 
 
-The library must be copied on the MicroPython board before using the examples.
+Faites une extraction des fichiers et copiez les sur votre plateforme MicroPython et "Voila !"... vous êtes prêt.
 
-On a WiFi capable plateform:
+# Installer les bibliothèques
+
+Les bibliothèques doivent être copiés sur votre carte MicroPython avant de tester les exemples.
+
+Vous pouvez installer les bibliothèques depuis le __master__ ou en exécutant les commandes suivantes: 
+
+Sur une plateforme WiFi :
 
 ```
 >>> import mip
 >>> mip.install("github:mchobby/esp8266-upy/pcf8523")
 ```
 
-Or via the mpremote utility :
+Ou via l'utilitaire mpremote :
 
 ```
 mpremote mip install github:mchobby/esp8266-upy/pcf8523
 ```
 
-Copy the `sdscard.py` file from the micropython-lib repository:
+Copier le fichier `sdscard.py` depuis le dépôt micropython-lib :
 
 * [micropython-lib/micropython/drivers/storage/sdcard](https://github.com/micropython/micropython-lib/tree/master/micropython/drivers/storage/sdcard)
 
-# Wiring 
+# Brancher
 
-Just plug your Pico on the Pico-Datalog-boot. Take care to place the pico USB over the CR1220 cell coin.
+Connectez votre picro sur le Pico-Datalog-boot. Faites attention à placer le connecteur USB de votre Pico au dessus de la piile bouton.
 
-# Testing
+![Installer Pico-Datalog-boot](docs/_static/pico-datalog-boot-install.jpg)
 
-The required library must be installed prior to run the MicroPython examples scripts.
+Note: le dessous de la carte Pico-DataLog-Boot reprend la mentions "USB" permettant d'indiquer l'orientation du Pico.
 
-About examples:
+# Tester
 
-The `examples` sub-folder contains well documented scripts.
+Les bibliothèques doivent être installée avant l'exécution des scripts d'exemple.
 
-It is a great idea to read them to discover the features.
+A propos des examples:
 
-# Shopping List
-xxx
+Le sous-répertoire `examples` contient des scripts bien documentés.
+
+* __[test_sd_detect.py](examples/test_sd_detect.py)__ : comment vérifier la présence de la carte microSD dans le connecteur.
+* __[test_sd_mount.py](examples/test_sd_mount.py)__ : Comment monter/démonter la carte SD dans le système de fichiers MicroPython. L'exemple liste les fichiers dans présent dans le répertoire. En anglais, ces opérations s'appellent _mount/unmount_.
+* __[test_getdate.py](examples/test_getdate.py)__ : Comment lire l'heure de l'horloge RTC
+* __[test_setdate.py](examples/test_setdate.py)__ : Comment modifier l'heure de l'horloge RTC (cela doit bien être fait une fois).
+* __[test_alarm.py](examples/test_alarm.py)__ : Experimentation avec la fonctionnalité d'alarme (de l'horloge RTC).
+* __[test_attribute.py](examples/test_attribute.py)__ : Inspection des attributs de l'horloge RTC.
+
+Il est vivement recommendé de lire ces scripts d'exemples pour découvrir les fonctionnalités.
+
+# Liste d'achat
+* [Pico-DataLog-Boot](https://shop.mchobby.be/fr/pico-rp2x/2912-carte-data-logger-pour-raspberry-pi-pico-3232100029125.html) est disponible @ MCHobby
