@@ -58,8 +58,10 @@ Le sous-répertoire `examples` contient des scripts bien documentés.
 * __[test_setdate.py](examples/test_setdate.py)__ : Comment modifier l'heure de l'horloge RTC (cela doit bien être fait une fois).
 * __[test_alarm.py](examples/test_alarm.py)__ : Experimentation avec la fonctionnalité d'alarme (de l'horloge RTC).
 * __[test_attribute.py](examples/test_attribute.py)__ : Inspection des attributs de l'horloge RTC.
+* __[test_clockout.py](examples/test_clockout.py)__ : produit un signal d'horloge sur la broche clkout/int. Les fréquences disponibles sont: 32768, 16384, 8192, 4096, 1024, 32, 1 Hz et None.
+* __[test_wakeup.py](examples/test_wakeup.py)__ : réveille un Pico du mode lightsleep avec un interruption matérielle générée par le pcf8523 lors d'une alarme (signal tombant sur la broche clkout/int du pcf8523).
 
-Il est vivement recommendé de lire ces scripts d'exemples pour découvrir les fonctionnalités.
+Il est vivement recommandé de lire ces scripts d'exemples pour découvrir les fonctionnalités.
 
 # Liste d'achat
 * [Pico-DataLog-Boot](https://shop.mchobby.be/fr/pico-rp2x/2912-carte-data-logger-pour-raspberry-pi-pico-3232100029125.html) est disponible @ MCHobby

@@ -56,6 +56,8 @@ The `examples` sub-folder contains well documented scripts.
 * __[test_setdate.py](examples/test_setdate.py)__ : how to update the RTC datetime (it must be done once)
 * __[test_alarm.py](examples/test_alarm.py)__ : experiment with the alarm feature of the RTC.
 * __[test_attribute.py](examples/test_attribute.py)__ : read the RTC attributes.
+* __[test_clockout.py](examples/test_clockout.py)__ : output clock signal on clkout/int pin. Available frequencies are: 32768, 16384, 8192, 4096, 1024, 32, 1 Hz or None.
+* __[test_wakeup.py](examples/test_wakeup.py)__ : wake up the Pico from lightsleep with a pcf8523 alarm interrupt generated on clkout/int pin.
 
 It is a great idea to read them to discover the features.
 
