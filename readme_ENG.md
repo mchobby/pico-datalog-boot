@@ -7,6 +7,8 @@ The Pico-Datalog-boot is a Pico Expansion board fitting a RTC (Reak Time Clock) 
 
 This expansion contains everything you need to deal with datetime and with large file storage (read/write files on a sd card is really great)
 
+[The schematic (r1) is available here](docs/_static/pico-datalog-boot-schematic-r1.jpg)
+
 # Install from MASTER
 
 The [masters.out/](masters.out) folder contains ZIP archive with all required files (examples scripts and libraries). 

@@ -5,7 +5,9 @@ Le Pico-Datalog-boot est une carte d'extension pour Pico équipé d'une horloge 
 
 ![Pico-Datalog-boot](docs/_static/pico-datalog-boot.jpg)
 
-Cette extension contient tout ce qu'il faut pour gérer le temps et le stockage de grands fichiers (lecture/écriture de fichiers sur une carte SD est vraiment un excellent complément sur un projet)
+Cette extension contient tout ce qu'il faut pour gérer le temps et le stockage de grands fichiers (lecture/écriture de fichiers sur une carte SD est vraiment un excellent complément sur un projet).
+
+[Le schéma (r1) est disponible ici](docs/_static/pico-datalog-boot-schematic-r1.jpg)
 
 # Installer depuis le MASTER
 
