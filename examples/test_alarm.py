@@ -2,6 +2,8 @@
 
 	Test the RTC alarm feature by setting it to now + 30 sec
 
+	See: https://github.com/mchobby/pico-datalog-boot/
+
 	Dominique Meurisse for MCHobby.be - initial portage
 """
 from machine import I2C,Pin

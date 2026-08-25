@@ -4,6 +4,7 @@ pushgit.sh
 makezip.sh
 lib-*.sh
 make-master*.sh
+hw-test.sh
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
